@@ -57,7 +57,7 @@ pipeline {
             steps {
                 script {
                     echo "Pushing image to Docker Hub..."
-                    withDockerRegistry(credentialsId: '8d72d5f5-1a1d-4a72-aec3-4d20f34b4238') {
+                    withDockerRegistry(credentialsId: '448013d2-a97f-42d0-b011-754cbf9ffb60') {
                         sh "docker push ${IMAGE_NAME}:${IMAGE_TAG}"
                     }
                 }
