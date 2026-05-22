@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = "ashishwayachal12/santra"
         IMAGE_TAG  = "${BUILD_ID}"
-        APP_PORT   = "1111"
+        APP_PORT   = "8090"
     }
 
     stages {
