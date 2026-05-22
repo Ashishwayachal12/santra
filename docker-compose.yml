@@ -1,0 +1,19 @@
+services:
+  sentra:
+    container_name: "sentra"
+      #build: .
+    image: ashishwayachal12/santra:v1
+    ports:
+      - "1111:80"
+    volumes:
+      - "sentra-vol:/usr/share/nginx/html"
+    networks:
+      - "sentra-net"
+
+volumes:
+  sentra-vol:
+    name: "sentra-vol"
+
+networks:
+  sentra-net:
+    name: "sentra-net"
