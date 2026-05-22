@@ -1,19 +1,20 @@
 services:
-  sentra:
-    container_name: "sentra"
-      #build: .
-    image: ashishwayachal12/santra:v1
+  santra:
+    container_name: "santra"
+    build: .
+    image: ashishwayachal12/santra:${BUILD_NUMBER}
+    restart: always
     ports:
       - "1111:80"
-    volumes:
-      - "sentra-vol:/usr/share/nginx/html"
+    #volumes:
+     # - "zipper-vol:/usr/share/nginx/html"
     networks:
-      - "sentra-net"
+      - "santra-net"
 
-volumes:
-  sentra-vol:
-    name: "sentra-vol"
+#volumes:
+ # zipper-vol:
+  #  name: "zipper-vol"
 
 networks:
-  sentra-net:
-    name: "sentra-net"
+  santra-net:
+    name: "santra-net"
