@@ -1,6 +1,5 @@
 services:
   santra:
-    container_name: "santra"
     build: .
     image: ashishwayachal12/santra:${BUILD_NUMBER}
     restart: always
