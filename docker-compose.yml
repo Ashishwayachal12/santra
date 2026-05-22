@@ -5,7 +5,7 @@ services:
     image: ashishwayachal12/santra:${BUILD_NUMBER}
     restart: always
     ports:
-      - "1111:80"
+      - "8090:80"
     #volumes:
      # - "zipper-vol:/usr/share/nginx/html"
     networks:
